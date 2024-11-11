@@ -79,7 +79,7 @@ plt.show()
 
 """## Modelo de machine learning"""
 
-pip install statsmodels
+os.system("pip install statsmodels")
 
 from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 from statsmodels.tsa.arima.model import ARIMA
