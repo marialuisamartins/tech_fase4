@@ -174,7 +174,7 @@ Primeiro, defina as ferramentas e o fluxo de trabalho para o deploy em produçã
 Para desenvolver um MVP com Streamlit, você pode criar uma interface simples que exibe a previsão diária do preço do petróleo e salva os resultados em um arquivo CSV ou JSON acessível pelo Power BI.
 """
 
-pip install streamlit
+os.system("pip install streamlit")
 
 import streamlit as st
 import pandas as pd
