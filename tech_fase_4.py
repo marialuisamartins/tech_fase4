@@ -13,12 +13,10 @@ Original file is located at
 
 import pandas as pd
 
-import pandas as pd
+# Comando de download usando wget
+os.system("wget 'https://raw.githubusercontent.com/marialuisamartins/tech_fase4/6ad3e07bc901fd984eedb3030510b2816aaf7383/ipeadata%5B03-11-2024-01-09%5D.xlsx' -O ipeadata.xlsx")
 
-# Download the Excel file using wget:
-wget 'https://raw.githubusercontent.com/marialuisamartins/tech_fase4/6ad3e07bc901fd984eedb3030510b2816aaf7383/ipeadata%5B03-11-2024-01-09%5D.xlsx' -O ipeadata.xlsx
-
-# Read the Excel file using pd.read_excel, optionally specifying the engine
+# Read the Excel file using pd.read_excel, optionally specifying the engine 
 ipeadata = pd.read_excel('ipeadata.xlsx', engine='openpyxl') # engine='openpyxl' is the default and generally won't need to be specified for .xlsx files
 # if this file were a .xls you would need to change it to engine='xlrd'
 
